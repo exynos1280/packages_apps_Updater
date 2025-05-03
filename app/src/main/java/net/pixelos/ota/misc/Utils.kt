@@ -137,7 +137,7 @@ object Utils {
 
     @JvmStatic
     fun getServerURL(context: Context): String {
-        val buildVersion: String = SystemProperties.get(Constants.PROP_BUILD_VERSION)
+        val buildVersion: String = "fifteen"
         val device: String = SystemProperties.get(Constants.PROP_DEVICE)
         val serverUrl: String = context.getString(R.string.updater_server_url)
 
@@ -146,7 +146,7 @@ object Utils {
 
     @JvmStatic
     fun getChangelogURL(context: Context): String {
-        val buildVersion: String = SystemProperties.get(Constants.PROP_BUILD_VERSION)
+        val buildVersion: String = "fifteen"
         val device: String = SystemProperties.get(Constants.PROP_DEVICE)
         val changelogUrl: String = context.getString(R.string.changelog_url)
 
@@ -155,7 +155,7 @@ object Utils {
 
     @JvmStatic
     fun getCertifiedPropsURL(context: Context): String {
-        val buildVersion: String = SystemProperties.get(Constants.PROP_BUILD_VERSION)
+        val buildVersion: String = "fifteen"
         val certifiedPropsUrl: String = context.getString(R.string.certified_prop_url)
 
         return certifiedPropsUrl.replace("{version}", buildVersion)
